@@ -2,32 +2,269 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #030712;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.gigiberidze{
+  font-weight: 700;
+  letter-spacing: 1px;
+  
 }
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+.headerframe{
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left{
+  display: flex;
+  align-items: center;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  gap: 15px;
+}
+.left img{
+  border: 0.1px solid rgba(255, 255, 255, 0.255);
+  border-radius: 50%;
+}
+.sections{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-left: 15%;
+}
+.green{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+}
+.sections a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+.green{
+  transition: 1s;
+}
+.homer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+.homeframe{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hometittle{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+.homeleft{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.fullstack{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.homedesc{
+  max-width: 500px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+  
+}
+.homebtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.portbtn{
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.cntbtn{
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: 1px solid white;
+  
+}
+.homedesc{
+  overflow: hidden;
+}
+.loader{
+  position: absolute;
+  width: 500px;
+  height: 170px;
+  z-index: 2;
+}
+.loader1{
+  width: 268px;
+  height: 21px;
+  position: absolute;
+  z-index: 2;
+
+}
+.loader3{
+  width: 328px;
+  height: 32px;
+  position: absolute;
+  z-index: 2;
+}
+.portfolioo{
+  width: 100%;
+height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioframe{
+  width:  70%;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.porttittle{
+  font-size: 34px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+}
+.job{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 80%;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+
+}
+.jobtittle{
+  font-size: 42px;
+  letter-spacing: 1px;
+  font-weight:  600;
+  padding: 50px;
+}
+.photo{
+  padding: 20px;
+  background-color: rgb(43, 42, 42);
+  transition: 0.1s;
+  cursor: pointer;
+}
+.howsee{
+
+  letter-spacing: 1px;
+  font-weight:  600;
+  margin-bottom: 50px;
+}
+.portfolioo{
+  margin-top: 440px;
+}
+.experiencer{
+  width: 100%;
+  height: 500px;
+
+  justify-content: center;
+  display: flex;
+  margin-top: 144px;
+}
+.experienecframe{
+
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+}
+.twentytittle{
+  font-weight: 600;
+}
+.expandworks{
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  display: flex;
+}
+.experiencelist{
+  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.experiencelist div{
+  align-items: center;
+}
+.experiencetittler{
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ball{
+  border-radius: 50%;
+  padding: 10px;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baller{
+  text-align: center;
+}
+.myit{
+  margin-bottom: 20px;
+}
+.myittwentytittle{
+
+  font-weight: 600;
+}
+.EmailServer{
+  margin-top: 20px;
+}
+.fullstacklogo{
+  border-radius: 50%;
+  width: 250px;
+  height: 200px;
 }
