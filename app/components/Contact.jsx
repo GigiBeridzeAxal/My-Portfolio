@@ -15,6 +15,7 @@ export default function Contact() {
               <motion.div   whileInView={{width:0}} transition={{duration:0.7}} style={{height:'25px' , width:'400px'}} className="loader4 bg-lime-500"></motion.div>
                 საკონტაქტო Mail <a className=' mailto text-blue-300' href="mailto:beridzegigi19@gmail.com">Beridzegigi19@gmail.com</a></div>
            <div className=" relative davaksireb text-white">
+            <br />
            <motion.div   whileInView={{width:0}} transition={{duration:0.7}} style={{height:'50px' ,}} className="loader4 bg-lime-500"></motion.div>
             დამიკავშირდით თუ საინტერესო შემოთავაზება გაქვთ განვიხილავ ყველა შესაძლო ვარიანტს</div>
              </div>
