@@ -12,7 +12,7 @@ export default function Header() {
     }
 
   return (
-    <div className="header">
+    <div className="header fixed">
         <div className="headerframe">
             <div className="left">
                 <img src="/GBLOGO.png" width={50} alt="" />
