@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="contactframe">
 
 
-             <div className="left">
+             <div className="lefter">
              <div className="titl">CONTACT</div>
    
               <div className="contactmail relative flex gap-3 text-white">
