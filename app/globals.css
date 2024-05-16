@@ -155,7 +155,7 @@ height: 500px;
 .portfolioframe{
   width:  70%;
   display: flex;
-  padding: 50px;
+  padding: 60px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -268,3 +268,291 @@ height: 500px;
   width: 250px;
   height: 200px;
 }
+.About{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 240px;
+
+
+
+  background-position: center;
+  background-size: cover;
+
+
+
+
+}
+.year{
+  font-size: 34px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+
+}
+.highlight{
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+
+}
+.year2{
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-size: cover;
+  background-position: center;
+
+
+}
+.text{
+  text-align: start;
+  color: gray;
+  margin-top: 20px;
+  font-size: 21px;
+}
+.AboutFrame{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+
+}
+.text{
+  max-width: 650px;
+}
+.first{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+.Two{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 150px;
+
+}
+.Three{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 150px;
+
+}
+.abt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 120px;
+}
+
+.mylogo{
+  border-radius: 50%;
+}
+.aboutittler{
+  margin-bottom: 20px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: black;
+ padding: 10px;
+  border-bottom: 1px solid #10b981;
+}
+.aboutdesc{
+  margin-bottom: 100px;
+}
+.firstline{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 70%;
+}
+.slogan{
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: black;
+
+ width: max-content;
+}
+.desc{
+  max-width: 455px;
+  letter-spacing: 1px;
+  
+
+}
+.descer{
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+
+}
+.loader4{
+  width: 550px;
+
+
+  height: 32px;
+  position: absolute;
+  z-index: 2;
+}
+.loader5{
+  width: 550px;
+
+  height: 196px;
+
+
+
+  position: absolute;
+  z-index: 2;
+}
+.loader6{
+  width: 650px;
+height: 30px;
+
+
+
+
+  position: absolute;
+  z-index: 2;
+}
+.aboutdesc{
+  position: relative;
+}
+.desc{
+  position: relative;
+
+}
+.loader5{
+  top: 0;
+}
+.slogan{
+  position: relative;
+}
+.mailto{
+  border-bottom: 1px solid #3b82f6;
+}
+.form input{
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #030712;
+  border: 1px solid white;
+  width: 550px;
+
+
+  
+}
+.form textarea{
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #030712;
+  border: 1px solid white;
+  width: 550px;
+  height: 200px;
+
+
+
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contactframe{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 70%;
+  padding: 20px;
+
+
+
+  
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.titl{
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+.davaksireb{
+  max-width: 550px;
+}
+.contact{
+  margin-top: 144px;
+}
+.copy{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  background-color: #050c1e;
+}
+.logo{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.copy img{
+  border: 1px solid rgba(255, 255, 255, 0.255);
+  border-radius: 50%;
+}
+.portfolioframe{
+  width: 100%;
+}
+

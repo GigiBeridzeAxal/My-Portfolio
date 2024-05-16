@@ -29,7 +29,7 @@ export default function Portfolio() {
      <a href='https://my-it-jobs-five.vercel.app/' onMouseLeave={(e) => setitjobs(false)}  onMouseEnter={(e) => setitjobs(true)}  onMouseMove={(e) => move(e)} className="job cursor-pointer">
 
         <div className="jobtittle">MYITJOBS</div>
-        {itjobs == true ? <div className="photo" style={{position:'absolute' , left:x + 25 , top:y}}><img src="/myitjobs.png" width={500} alt="" /></div> : <div></div>}
+        {itjobs == true ? <div className="photo" style={{position:'absolute' , left:x + 25 , top:y}}><img src="/myitjobs.png" width={500} height={500} alt="" /></div> : <div></div>}
 
         <div className="usedtech">Full-Stack Development (Mern Stack)</div>
 
@@ -38,7 +38,7 @@ export default function Portfolio() {
      <a href='https://emailserverfrontend-ud91.vercel.app/' onMouseLeave={(e) => setemailserver(false)}  onMouseEnter={(e) => setemailserver(true)}  onMouseMove={(e) => move(e)} className="job cursor-pointer">
 
 <div className="jobtittle">EmailServer</div>
-{emailserver == true ? <div className="photo" style={{position:'absolute' , left:x + 25 , top:y}}><img src="/EmailServer.png" width={500} alt="" /></div> : <div></div>}
+{emailserver == true ? <div className="photo" style={{position:'absolute' , left:x + 25 , top:y}}><img src="/EmailServer.png" width={500} height={500} alt="" /></div> : <div></div>}
 
 <div className="usedtech">Full-Stack Development (Mern Stack)</div>
 
