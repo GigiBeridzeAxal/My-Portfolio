@@ -76,7 +76,7 @@ export default function Header() {
             };
           }, []);
 
-    if(window.scrollY > 2350){
+    if(heighscro > 2350){
         return(
         <div className="header fixed">
         <div className="headerframe">
