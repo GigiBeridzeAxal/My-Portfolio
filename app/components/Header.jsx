@@ -13,9 +13,7 @@ export default function Header() {
        setheader(e.target.innerText)
 
     }
-
-    useEffect(() => {
-        window.addEventListener('scroll' , (e) => {
+        const handleScroll = () => {
             const scrollheight = window.scrollY
             setscrol(scrollheight)
 
@@ -65,11 +63,18 @@ export default function Header() {
 
            
        
-        })
+        
 
-      
-    },[])
+        }
 
+    
+
+        React.useEffect(() => {
+            window.addEventListener('scroll', handleScroll);
+            return () => {
+              window.removeEventListener('scroll', handleScroll);
+            };
+          }, []);
 
     if(window.scrollY > 2350){
         return(
