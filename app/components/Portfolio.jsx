@@ -18,7 +18,7 @@ export default function Portfolio() {
       console.log(e.pageX)
    }
   return (
-   <div className="portfolioo">
+   <div id='Portfolio' className="portfolioo">
 
     <div className="portfolioframe bg-gray-900">
         <div className="porttittle">Portfolio</div>

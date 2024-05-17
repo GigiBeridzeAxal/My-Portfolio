@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div id='Contact' className="contact">
         <div className="contactframe">
 
 

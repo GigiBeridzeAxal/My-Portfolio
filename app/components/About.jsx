@@ -6,7 +6,7 @@ export default function About() {
   return (
 
     <>
-    <div className="About bg-white">
+    <div id='About' className="About bg-white">
 
     <div  className="AboutFrame ">
 

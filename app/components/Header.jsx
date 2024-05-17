@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import {Link, Link as LinkScroll} from 'react-scroll/modules'
 
 export default function Header() {
 
@@ -9,8 +10,10 @@ export default function Header() {
 
 
     const changer = (e) => {
+       setTimeout(() => {
+        setheader(e.target.innerText)  
+       }, 500);
 
-       setheader(e.target.innerText)
 
     }
         const handleScroll = () => {
@@ -28,13 +31,13 @@ export default function Header() {
             }
             if(scrollheight > 500){
 
-                if(scrollheight < 1000){
+                if(scrollheight < 1200){
                     setheader("PORTFOLIO")
                 }
 
 
             }
-            if(scrollheight > 1000){
+            if(scrollheight > 1200){
 
                 if(scrollheight < 1500){
                     setheader("EXPERIENCE")
@@ -42,7 +45,7 @@ export default function Header() {
 
 
             }
-            if(scrollheight > 2000){
+            if(scrollheight > 1900){
 
                 if(scrollheight < 2500){
                     setheader("ABOUT")
@@ -50,7 +53,7 @@ export default function Header() {
 
 
             }
-            if(scrollheight > 2500){
+            if(scrollheight > 2400){
 
                 if(scrollheight < 6500){
                     setheader("CONTACT")
@@ -88,31 +91,31 @@ export default function Header() {
                 <div className="sections">
                     {headerchosed == 'HOME' ? <a onClick={(e) => changer(e)} className="home text-emerald-500">
                     <div className="green bg-emerald-500"></div>
-                    HOME</a> : <a onClick={(e) => changer(e)} className="home text-black ">
+                    HOME</a> : <Link to='Home' spy={true} offset={50} smooth={true}  duration={500} onClick={(e) => changer(e)} className="home text-black ">
     
-                    HOME</a> }
+                    HOME</Link> }
                     {headerchosed == 'PORTFOLIO' ?  <a onClick={(e) => changer(e)} className="portfolio text-emerald-500">
                  <div className="green bg-emerald-500"></div>
-                    PORTFOLIO</a> : <a onClick={(e) => changer(e)} className="portfolio text-black">
+                    PORTFOLIO</a> : <Link to='Portfolio' spy={true} offset={50} smooth={true}  duration={500} onClick={(e) => changer(e)} className="portfolio text-black">
        
-                    PORTFOLIO</a>}
+                    PORTFOLIO</Link>}
 
                     {headerchosed == 'EXPERIENCE' ?                 
                  <a onClick={(e) => changer(e)} className="experience text-emerald-500">
                  <div className="green bg-emerald-500"></div>
                     EXPERIENCE</a> :                
-                 <a onClick={(e) => changer(e)} className="experience text-black">
+                 <Link to='Experience' spy={true} offset={50} smooth={true}  duration={500} onClick={(e) => changer(e)} className="experience text-black">
 
-                    EXPERIENCE</a>}
+                    EXPERIENCE</Link>}
                     {headerchosed == 'ABOUT' ?                  
  
   <a onClick={(e) => changer(e)} className="about text-emerald-500">
 <div className="green bg-emerald-500"></div>
  ABOUT</a> :                
 
-  <a onClick={(e) => changer(e)} className="about text-black">
+  <Link to='About' spy={true} offset={50} smooth={true}  duration={500} onClick={(e) => changer(e)} className="about text-black">
 
- ABOUT</a>}
+ ABOUT</Link>}
  {headerchosed == 'CONTACT' ?                  
  
  
@@ -123,10 +126,10 @@ export default function Header() {
 
 </a> :                
 
- <a onClick={(e) => changer(e)} className="about text-black">
+ <Link to='Contact' spy={true} offset={50} smooth={true}  duration={500} onClick={(e) => changer(e)} className="about text-black">
 
 
-CONTACT</a>}
+CONTACT</Link>}
 
 
 
@@ -155,31 +158,31 @@ CONTACT</a>}
                 <div className="sections">
                     {headerchosed == 'HOME' ? <a onClick={(e) => changer(e)} className="home text-emerald-500">
                     <div className="green bg-emerald-500"></div>
-                    HOME</a> : <a onClick={(e) => changer(e)} className="home ">
+                    HOME</a> : <Link to='Home' spy={true} offset={50} smooth={true}  duration={500}  onClick={(e) => changer(e)} className="home ">
     
-                    HOME</a> }
+                    HOME</Link> }
                     {headerchosed == 'PORTFOLIO' ?  <a onClick={(e) => changer(e)} className="portfolio text-emerald-500">
                  <div className="green bg-emerald-500"></div>
-                    PORTFOLIO</a> : <a onClick={(e) => changer(e)} className="portfolio">
+                    PORTFOLIO</a> : <Link to='Portfolio' spy={true} offset={50} smooth={true} onClick={(e) => changer(e)} className="portfolio">
        
-                    PORTFOLIO</a>}
+                    PORTFOLIO</Link>}
 
                     {headerchosed == 'EXPERIENCE' ?                 
                  <a onClick={(e) => changer(e)} className="experience text-emerald-500">
                  <div className="green bg-emerald-500"></div>
                     EXPERIENCE</a> :                
-                 <a onClick={(e) => changer(e)} className="experience">
+                 <Link to='Experience' spy={true} offset={50} smooth={true} onClick={(e) => changer(e)} className="experience">
 
-                    EXPERIENCE</a>}
+                    EXPERIENCE</Link>}
                     {headerchosed == 'ABOUT' ?                  
  
   <a onClick={(e) => changer(e)} className="about text-emerald-500">
 <div className="green bg-emerald-500"></div>
  ABOUT</a> :                
 
-  <a onClick={(e) => changer(e)} className="about ">
+  <Link to='About' spy={true} offset={50} smooth={true} onClick={(e) => changer(e)} className="about ">
 
- ABOUT</a>}
+ ABOUT</Link>}
  {headerchosed == 'CONTACT' ?                  
  
  
@@ -190,10 +193,10 @@ CONTACT</a>}
 
 </a> :                
 
- <a onClick={(e) => changer(e)} className="about ">
+ <Link to='Contact' spy={true} offset={50} smooth={true} onClick={(e) => changer(e)} className="about ">
 
 
-CONTACT</a>}
+CONTACT</Link>}
 
 
 

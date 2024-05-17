@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function Experience() {
   return (
-   <div className="experiencer">
-    <div id='Experience' className="experienecframe p-5">
+   <div  className="experiencer">
+    <div  id='Experience' className="experienecframe p-5">
   
-     <div className="experiencetittler text-white "> Skills & Experience </div>
+     <div  className="experiencetittler text-white "> Skills & Experience </div>
 
-     <div className="expandworks">
+     <div  className="expandworks">
 
         <div className="experiencelist flex ">
         
@@ -39,7 +39,7 @@ export default function Experience() {
 </div>
 <div className="baller">
 
-<div className="ball bg-gray-300"><img src={'/Nextjs.png'} width={70} alt="" /></div >
+<div  className="ball bg-gray-300"><img src={'/Nextjs.png'} width={70} alt="" /></div >
 
  <div className="text-gray-600">Next.js</div>
 </div>

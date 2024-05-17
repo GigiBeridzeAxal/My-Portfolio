@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 export default function Welcome() {
   return (
-   <div className="homer">
+   <div id='Home' className="homer">
     <div className="homeframe">
 
       <div className="homeleft">
